@@ -53,6 +53,7 @@
         }
 
         .hero {
+            position: relative; /* Add position relative to make overlay absolute positioned */
             background-image: url('https://github.com/DensilK/cse23-104/raw/main/image/doctorstrange_01-1920x1080_copy.jpg');
             background-size: cover;
             background-position: cover;
@@ -64,6 +65,17 @@
             text-align: center;
             color: #000; /* Set text color to black */
             padding: 20px; /* Add padding to create space around the text */
+        }
+
+        /* Add overlay style */
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
         }
 
         .hero h2,
