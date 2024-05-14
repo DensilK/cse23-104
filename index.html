@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            color: #fff; /* Set default text color to white */
+            color: #000; /* Set default text color to black */
         }
 
         body {
@@ -49,24 +49,19 @@
         }
 
         nav ul li a:hover {
-            color: red; /* Change text color to red on hover */
+            color: yellow; /* Change text color to yellow on hover */
         }
 
         .hero {
             background-image: url('https://github.com/DensilK/cse23-104/raw/main/image/818dbP4AktL._AC_UF1000,1000_QL80_.jpg');
             background-size: cover;
-            background-position: cover;
-            background-repeat: no-repeat;
+            background-position: center;
             height: 100vh; /* Set height to 100% of viewport height */
             display: flex; /* Use flexbox to center content vertically */
             justify-content: center; /* Center content horizontally */
             align-items: center; /* Center content vertically */
             text-align: center;
             padding: 20px; /* Add padding to create space around the text */
-        }
-
-        .hero h2,
-        .hero p {
             color: #000; /* Set text color to black */
         }
 
@@ -103,20 +98,37 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Warner Bros</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">TV Shows</a></li>
-                    <li><a href="#">Games</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Shop</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<header>
+    <div class="container">
+        <h1>Warner Bros</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-    <section class="hero">
-        <div class="container">
+<section class="hero">
+    <div class="container">
+        <h2>Welcome to Warner Bros</h2>
+        <p>Discover the latest movies, TV shows, games, and news.</p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Warner Bros. All rights reserved. |
+            <a href="https://www.facebook.com/yourpage">Facebook</a> |
+            <a href="#">Twitter</a> |
+            <a href="https://www.instagram.com/yourpage">Instagram</a> |
+            <a href="https://wa.me/yourphonenumber">WhatsApp</a>
+        </p>
+    </div>
+</footer>
+</body>
+</html>
