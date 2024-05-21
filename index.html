@@ -64,13 +64,14 @@
             background-size: cover;
             background-position: center; /* Center the background image */
             background-repeat: no-repeat;
-            height: 100vh; /* Set height to 100% of viewport height */
+            height: calc(100vh - 1.5cm); /* Set height to 100% of viewport height minus 1.5cm */
             display: flex; /* Use flexbox to center content vertically */
             justify-content: center; /* Center content horizontally */
             align-items: center; /* Center content vertically */
             text-align: center;
             padding: 20px; /* Add padding to create space around the text */
             margin-bottom: 40px; /* Add space below the hero section */
+            clip-path: inset(0 0 1.5cm 0); /* Crop 1.5cm from the bottom */
         }
 
         .hero h2,
