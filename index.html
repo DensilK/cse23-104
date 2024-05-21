@@ -18,6 +18,7 @@
         body {
             font-family: Arial, sans-serif; /* Use a standard web-safe font */
             background-color: #000;
+            line-height: 1.6; /* Improved readability */
         }
 
         .container {
@@ -34,20 +35,24 @@
 
         header h1 {
             font-size: 24px;
+            margin-bottom: 10px; /* Add space below the heading */
         }
 
         nav ul {
             list-style-type: none;
+            padding-left: 0; /* Remove default padding */
+            display: flex;
+            gap: 20px; /* Add space between navigation items */
         }
 
         nav ul li {
             display: inline;
-            margin-right: 20px;
         }
 
         nav ul li a {
             color: #fff; /* Set text color to white */
             text-decoration: none;
+            padding: 5px 10px; /* Add padding to make the clickable area larger */
         }
 
         nav ul li a:hover {
@@ -65,11 +70,13 @@
             align-items: center; /* Center content vertically */
             text-align: center;
             padding: 20px; /* Add padding to create space around the text */
+            margin-bottom: 40px; /* Add space below the hero section */
         }
 
         .hero h2,
         .hero p {
             color: #fff; /* Set text color to white */
+            max-width: 800px; /* Restrict width for better readability */
         }
 
         .hero h2 {
@@ -87,12 +94,14 @@
             color: #fff; /* Set text color to white */
             text-align: center;
             padding: 20px 0;
+            margin-top: 40px; /* Add space above the footer */
         }
 
         footer a {
             color: #fff; /* Set link color to white */
             text-decoration: none;
             margin: 0 10px; /* Add margin between links */
+            padding: 10px; /* Add padding to make icons easier to click */
         }
 
         footer a:hover {
@@ -100,7 +109,12 @@
         }
 
         footer a i {
-            font-size: 20px; /* Set icon size */
+            font-size: 24px; /* Set icon size */
+        }
+
+        /* Additional spacing for better layout */
+        header nav {
+            margin-top: 10px; /* Add space between header title and nav */
         }
     </style>
 </head>
