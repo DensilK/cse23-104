@@ -71,6 +71,43 @@
         .movie img {
             width: 200px; /* Set reduced width for images */
             outline: none; /* Remove any outline */
+            transition: transform 0.3s ease; /* Add a smooth transition for transform */
+        }
+
+        .movie img:hover {
+            transform: scale(1.05); /* Slightly enlarge the image on hover */
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 20px; /* Adjust header font size for smaller screens */
+            }
+
+            .section h2 {
+                font-size: 22px; /* Adjust section heading font size */
+            }
+
+            .movie img {
+                width: 150px; /* Adjust movie image size for smaller screens */
+            }
+        }
+
+        @media (max-width: 576px) {
+            header h1 {
+                font-size: 18px; /* Further adjust header font size for very small screens */
+            }
+
+            .section h2 {
+                font-size: 20px; /* Further adjust section heading font size */
+            }
+
+            .movie img {
+                width: 120px; /* Further adjust movie image size for very small screens */
+            }
+
+            .container {
+                padding: 0 10px; /* Reduce container padding for smaller screens */
+            }
         }
     </style>
 </head>
@@ -87,12 +124,12 @@
             <div class="movies-row">
                 <div class="movies-container">
                     <div class="movie"><img src="image/space_jam_new_legacy_lebron_dunk_2000x3000.png" alt="Space Jam: A New Legacy"></div>
-                    <div class="movie"><img src="image/the_hobbit_an_expected_journey_2000x3000.jpg" alt="hobbit.html"></div>
-                    <div class="movie"><img src="image/harry_potter_8film_2000x3000.jpg" alt="harry.html"></div>
-                    <div class="movie"><img src="image/lego_movie_keyart.jpg" alt="lego.html"></div>
-                    <div class="movie"><img src="image/the_dark_knight_rises_key_art.jpg" alt="batman.html"></div>
-                    <div class="movie"><img src="image/the_blind_side_key_art.jpg" alt="blind.html"></div>
-                    <div class="movie"><img src="image/AStarIsBorn_2018_2000x3000.jpg" alt="star.html"></div>
+                    <div class="movie"><img src="image/the_hobbit_an_expected_journey_2000x3000.jpg" alt="The Hobbit: An Unexpected Journey"></div>
+                    <div class="movie"><img src="image/harry_potter_8film_2000x3000.jpg" alt="Harry Potter"></div>
+                    <div class="movie"><img src="image/lego_movie_keyart.jpg" alt="The Lego Movie"></div>
+                    <div class="movie"><img src="image/the_dark_knight_rises_key_art.jpg" alt="The Dark Knight Rises"></div>
+                    <div class="movie"><img src="image/the_blind_side_key_art.jpg" alt="The Blind Side"></div>
+                    <div class="movie"><img src="image/AStarIsBorn_2018_2000x3000.jpg" alt="A Star Is Born"></div>
                 </div>
             </div>
         </div>
@@ -101,13 +138,13 @@
             <h2>New Releases</h2>
             <div class="movies-row">
                 <div class="movies-container">
-                    <div class="movie"><img src="image/shazam2_keyart.jpg" alt="shazam.html"></div>
-                    <div class="movie"><img src="image/wrath_of_man_2000x3000.jpg" alt="man.html"></div>
-                    <div class="movie"><img src="image/mortal_kombat_2021_2000x3000.jpg" alt="mk.html"></div>
-                    <div class="movie"><img src="image/godzilla_vs_kong_white_font_2000x3000.jpg" alt="kong.html"></div>
-                    <div class="movie"><img src="image/judas_and_the_black_messiah_red_clean_2000x3000.png" alt="judas.html"></div>
-                    <div class="movie"><img src="image/just_mercy_2000x3000.jpg" alt="just.html"></div>
-                    <div class="movie"><img src="image/conjuring_keyart.jpg" alt="demon.html"></div>
+                    <div class="movie"><img src="image/shazam2_keyart.jpg" alt="Shazam! Fury of the Gods"></div>
+                    <div class="movie"><img src="image/wrath_of_man_2000x3000.jpg" alt="Wrath of Man"></div>
+                    <div class="movie"><img src="image/mortal_kombat_2021_2000x3000.jpg" alt="Mortal Kombat"></div>
+                    <div class="movie"><img src="image/godzilla_vs_kong_white_font_2000x3000.jpg" alt="Godzilla vs. Kong"></div>
+                    <div class="movie"><img src="image/judas_and_the_black_messiah_red_clean_2000x3000.png" alt="Judas and the Black Messiah"></div>
+                    <div class="movie"><img src="image/just_mercy_2000x3000.jpg" alt="Just Mercy"></div>
+                    <div class="movie"><img src="image/conjuring_keyart.jpg" alt="The Conjuring"></div>
                 </div>
             </div>
         </div>
@@ -116,13 +153,13 @@
             <h2>Television</h2>
             <div class="movies-row">
                 <div class="movies-container">
-                    <div class="movie"><img src="image/tedlasso_1400x2100_v1.jpg" alt="ted.html"></div>
-                    <div class="movie"><img src="image/abbott-elementary_s3_1400x2100_v1.jpg" alt="abby.html"></div>
-                    <div class="movie"><img src="image/deadboydectives-s1_1400x2100_v1.jpg" alt="boy.html"></div>
-                    <div class="movie"><img src="image/thebigcigar-s1_1400x2100_v1.jpg" alt="big.html"></div>
-                    <div class="movie"><img src="image/thegirlsonthebus-s1_1400x2100_v1.jpg" alt="bus.html"></div>
-                    <div class="movie"><img src="image/bip-s9_1400x2100_v1.jpg" alt="bach.html"></div>
-                    <div class="movie"><img src="image/the_bachelorette_s20_keyart.jpg" alt="pink.html"></div>
+                    <div class="movie"><img src="image/tedlasso_1400x2100_v1.jpg" alt="Ted Lasso"></div>
+                    <div class="movie"><img src="image/abbott-elementary_s3_1400x2100_v1.jpg" alt="Abbott Elementary"></div>
+                    <div class="movie"><img src="image/deadboydectives-s1_1400x2100_v1.jpg" alt="Dead Boy Detectives"></div>
+                    <div class="movie"><img src="image/thebigcigar-s1_1400x2100_v1.jpg" alt="The Big Cigar"></div>
+                    <div class="movie"><img src="image/thegirlsonthebus-s1_1400x2100_v1.jpg" alt="The Girls on the Bus"></div>
+                    <div class="movie"><img src="image/bip-s9_1400x2100_v1.jpg" alt="Bachelor in Paradise"></div>
+                    <div class="movie"><img src="image/the_bachelorette_s20_keyart.jpg" alt="The Bachelorette"></div>
                 </div>
             </div>
         </div>
