@@ -6,81 +6,67 @@
     <title>My Warner Bros Style Website</title>
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Reset default browser styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            color: #fff; /* Set default text color to white */
-        }
-
+        /* Custom styles */
         body {
-            font-family: Arial, sans-serif; /* Use a standard web-safe font */
+            font-family: Arial, sans-serif;
             background-color: #000;
-            line-height: 1.6; /* Improved readability */
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
+            line-height: 1.6;
+            color: #fff;
         }
 
         header {
             background-color: #333;
-            color: #fff; /* Set text color to white */
+            color: #fff;
             padding: 20px 0;
             text-align: center;
         }
 
         header h1 {
             font-size: 24px;
-            margin-bottom: 10px; /* Add space below the heading */
+            margin-bottom: 10px;
         }
 
         nav ul {
             list-style-type: none;
-            padding-left: 0; /* Remove default padding */
+            padding-left: 0;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 20px; /* Add space between navigation items */
-        }
-
-        nav ul li {
-            display: inline;
+            gap: 20px;
         }
 
         nav ul li a {
-            color: #fff; /* Set text color to white */
+            color: #fff;
             text-decoration: none;
-            padding: 5px 10px; /* Add padding to make the clickable area larger */
+            padding: 5px 10px;
         }
 
         nav ul li a:hover {
-            color: red; /* Change text color to red on hover */
+            color: red;
         }
 
         .hero {
             background-image: url('https://github.com/DensilK/cse23-104/raw/main/image/818dbP4AktL._AC_UF1000,1000_QL80_.jpg');
             background-size: cover;
-            background-position: cover; /* Center the background image */
+            background-position: cover;
             background-repeat: no-repeat;
-            height: calc(100vh - 0.5cm); /* Set height to 100% of viewport height minus 0.5cm */
-            display: flex; /* Use flexbox to center content vertically */
-            justify-content: center; /* Center content horizontally */
-            align-items: center; /* Center content vertically */
+            height: calc(100vh - 0.5cm);
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            padding: 20px; /* Add padding to create space around the text */
-            margin-bottom: 40px; /* Add space below the hero section */
-            clip-path: inset(0 0 0.5cm 0); /* Crop 0.5cm from the bottom */
+            padding: 20px;
+            margin-bottom: 40px;
+            clip-path: inset(0 0 0.5cm 0);
         }
 
         .hero h2,
         .hero p {
-            color: #fff; /* Set text color to white */
-            max-width: 800px; /* Restrict width for better readability */
+            color: #fff;
+            max-width: 800px;
         }
 
         .hero h2 {
@@ -95,33 +81,28 @@
 
         footer {
             background-color: #333;
-            color: #fff; /* Set text color to white */
+            color: #fff;
             text-align: center;
             padding: 20px 0;
-            margin-top: 40px; /* Add space above the footer */
+            margin-top: 40px;
         }
 
         footer a {
-            color: #fff; /* Set link color to white */
+            color: #fff;
             text-decoration: none;
-            margin: 0 10px; /* Add margin between links */
-            padding: 10px; /* Add padding to make icons easier to click */
+            margin: 0 10px;
+            padding: 10px;
         }
 
         footer a:hover {
-            color: red; /* Change text color to red on hover */
+            color: red;
         }
 
         footer a i {
-            font-size: 24px; /* Set icon size */
+            font-size: 24px;
         }
 
-        /* Additional spacing for better layout */
-        header nav {
-            margin-top: 10px; /* Add space between header title and nav */
-        }
-
-        /* Media Queries for responsiveness */
+        /* Media Queries */
         @media (max-width: 768px) {
             .hero h2 {
                 font-size: 28px;
@@ -157,11 +138,11 @@
         <div class="container">
             <h1>Warner Bros</h1>
             <nav>
-                <ul>
-                    <li><a href="movies.html">Movies & TV</a></li>
-                    <li><a href="https://warnerbrosgames.com/">Games</a></li>
-                    <li><a href="https://wbshop.com/collections/game-of-thrones?tw_source=google&tw_adid=&tw_campaign=21109393177&gad_source=1&gclid=Cj0KCQjwjLGyBhCYARIsAPqTz19PFdxytELqwJCgbXcBSKsjLSb8jGdvZS6w_lOfBfzMOhRyPFHGlvUaAv-sEALw_wcB">Collections</a></li>
-                    <li><a href="feedback.html">Feedback</a></li>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link" href="movies.html">Movies & TV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://warnerbrosgames.com/">Games</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://wbshop.com/collections/game-of-thrones?tw_source=google&tw_adid=&tw_campaign=21109393177&gad_source=1&gclid=Cj0KCQjwjLGyBhCYARIsAPqTz19PFdxytELqwJCgbXcBSKsjLSb8jGdvZS6w_lOfBfzMOhRyPFHGlvUaAv-sEALw_wcB">Collections</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
                 </ul>
             </nav>
         </div>
@@ -184,5 +165,10 @@
             </div>
         </div>
     </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
