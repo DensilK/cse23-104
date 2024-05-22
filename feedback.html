@@ -17,15 +17,20 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh; /* Ensure footer stays at the bottom */
+            position: relative; /* Set relative positioning */
+            background-image: url('background.jpg'); /* Set the background image */
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
         }
 
         .container {
             max-width: 600px;
             width: 100%;
             padding: 20px;
-            background-color: #333;
+            background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent background color to improve readability */
             border-radius: 8px;
+            margin-bottom: 80px; /* Increase bottom margin for footer */
         }
 
         h1 {
@@ -74,8 +79,9 @@
             text-align: center;
             padding: 20px 0;
             width: 100%;
-            position: fixed;
+            position: absolute; /* Set absolute positioning */
             bottom: 0;
+            height: 60px; /* Set the height of the footer */
         }
 
         footer a {
