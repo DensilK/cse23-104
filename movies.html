@@ -12,119 +12,120 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            color: #fff; /* Set default text color to white */
         }
 
         body {
             font-family: Arial, sans-serif; /* Use a standard web-safe font */
             background-color: #000;
-            color: #fff;
-            padding: 20px;
+            background-image: url('path-to-your-background-image.jpg'); /* Add your background image here */
+            background-size: cover; /* Ensure the background covers the entire page */
+            background-position: center; /* Center the background image */
+            background-attachment: fixed; /* Ensure the background image stays fixed on scroll */
+            line-height: 1.6; /* Improved readability */
+            overflow-x: hidden; /* Prevent horizontal scroll due to background image */
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
+            padding: 0 20px;
         }
 
         header {
+            background-color: #333;
+            color: #fff; /* Set text color to white */
+            padding: 20px 0;
             text-align: center;
-            margin-bottom: 40px;
         }
 
         header h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
+            font-size: 24px;
+            margin-bottom: 10px; /* Add space below the heading */
         }
 
         .section {
-            margin-bottom: 40px;
-        }
-
-        .section h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
+            margin: 20px 0; /* Add space between sections */
         }
 
         .movies-row {
             overflow-x: auto; /* Enable horizontal scrolling */
-            white-space: nowrap;
+            white-space: nowrap; /* Prevent items from wrapping to the next line */
+            padding: 10px 0; /* Add some padding for better spacing */
+            scrollbar-width: none; /* Hide scrollbar in Firefox */
+        }
+
+        .movies-row::-webkit-scrollbar {
+            display: none; /* Hide scrollbar in WebKit-based browsers (Chrome, Safari) */
         }
 
         .movies-container {
-            display: inline-flex; /* Use inline-flex to prevent wrapping */
-            gap: 20px;
-            padding-bottom: 20px; /* Add some padding at the bottom to make sure the horizontal scrollbar is visible */
+            display: inline-block; /* Display as inline-block for horizontal scroll */
         }
 
         .movie {
-            flex-shrink: 0; /* Prevent movies from shrinking */
-            width: 280px; /* Set width of movie keyart */
-            outline: none; /* Remove outline */
-            margin-right: 0; /* Remove margin-right */
+            display: inline-block; /* Display as inline-block for horizontal scroll */
+            margin-right: 10px; /* Add some spacing between movies */
         }
 
         .movie img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        /* Hide scrollbar specifically for WebKit browsers */
-        .movies-row::-webkit-scrollbar {
-            display: none;
+            width: 280px; /* Set fixed width for images */
+            outline: none; /* Remove any outline */
         }
     </style>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1>Movies - Warner Bros</h1>
+        </div>
+    </header>
+
     <div class="container">
-        <header>
-            <h1>Warner Bros - Movies</h1>
-        </header>
         <div class="section">
             <h2>Popular Movies</h2>
             <div class="movies-row">
                 <div class="movies-container">
-                    <div class="movie"><img src="movie1.jpg" alt="Movie 1"></div>
-                    <div class="movie"><img src="movie2.jpg" alt="Movie 2"></div>
-                    <div class="movie"><img src="movie3.jpg" alt="Movie 3"></div>
-                    <div class="movie"><img src="movie4.jpg" alt="Movie 4"></div>
-                    <div class="movie"><img src="movie5.jpg" alt="Movie 5"></div>
-                    <div class="movie"><img src="movie6.jpg" alt="Movie 6"></div>
-                    <div class="movie"><img src="movie7.jpg" alt="Movie 7"></div>
-                    <!-- Add more movies here -->
+                    <div class="movie"><img src="images/movie1.jpg" alt="Movie 1"></div>
+                    <div class="movie"><img src="images/movie2.jpg" alt="Movie 2"></div>
+                    <div class="movie"><img src="images/movie3.jpg" alt="Movie 3"></div>
+                    <div class="movie"><img src="images/movie4.jpg" alt="Movie 4"></div>
+                    <div class="movie"><img src="images/movie5.jpg" alt="Movie 5"></div>
+                    <div class="movie"><img src="images/movie6.jpg" alt="Movie 6"></div>
+                    <div class="movie"><img src="images/movie7.jpg" alt="Movie 7"></div>
                 </div>
             </div>
         </div>
+
         <div class="section">
             <h2>New Releases</h2>
             <div class="movies-row">
                 <div class="movies-container">
-                    <div class="movie"><img src="movie8.jpg" alt="Movie 8"></div>
-                    <div class="movie"><img src="movie9.jpg" alt="Movie 9"></div>
-                    <div class="movie"><img src="movie10.jpg" alt="Movie 10"></div>
-                    <div class="movie"><img src="movie11.jpg" alt="Movie 11"></div>
-                    <div class="movie"><img src="movie12.jpg" alt="Movie 12"></div>
-                    <div class="movie"><img src="movie13.jpg" alt="Movie 13"></div>
-                    <div class="movie"><img src="movie14.jpg" alt="Movie 14"></div>
-                    <!-- Add more movies here -->
+                    <div class="movie"><img src="images/movie8.jpg" alt="Movie 8"></div>
+                    <div class="movie"><img src="images/movie9.jpg" alt="Movie 9"></div>
+                    <div class="movie"><img src="images/movie10.jpg" alt="Movie 10"></div>
+                    <div class="movie"><img src="images/movie11.jpg" alt="Movie 11"></div>
+                    <div class="movie"><img src="images/movie12.jpg" alt="Movie 12"></div>
+                    <div class="movie"><img src="images/movie13.jpg" alt="Movie 13"></div>
+                    <div class="movie"><img src="images/movie14.jpg" alt="Movie 14"></div>
                 </div>
             </div>
         </div>
+
         <div class="section">
-            <h2>Trending Now</h2>
+            <h2>Top Rated</h2>
             <div class="movies-row">
                 <div class="movies-container">
-                    <div class="movie"><img src="movie15.jpg" alt="Movie 15"></div>
-                    <div class="movie"><img src="movie16.jpg" alt="Movie 16"></div>
-                    <div class="movie"><img src="movie17.jpg" alt="Movie 17"></div>
-                    <div class="movie"><img src="movie18.jpg" alt="Movie 18"></div>
-                    <div class="movie"><img src="movie19.jpg" alt="Movie 19"></div>
-                    <div class="movie"><img src="movie20.jpg" alt="Movie 20"></div>
-                    <div class="movie"><img src="movie21.jpg" alt="Movie 21"></div>
-                    <!-- Add more movies here -->
+                    <div class="movie"><img src="images/movie15.jpg" alt="Movie 15"></div>
+                    <div class="movie"><img src="images/movie16.jpg" alt="Movie 16"></div>
+                    <div class="movie"><img src="images/movie17.jpg" alt="Movie 17"></div>
+                    <div class="movie"><img src="images/movie18.jpg" alt="Movie 18"></div>
+                    <div class="movie"><img src="images/movie19.jpg" alt="Movie 19"></div>
+                    <div class="movie"><img src="images/movie20.jpg" alt="Movie 20"></div>
+                    <div class="movie"><img src="images/movie21.jpg" alt="Movie 21"></div>
                 </div>
             </div>
         </div>
     </div>
 </body>
 </html>
-
