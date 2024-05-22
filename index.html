@@ -31,6 +31,7 @@
             background-color: #333;
             color: #fff; /* Set text color to white */
             padding: 20px 0;
+            text-align: center;
         }
 
         header h1 {
@@ -42,6 +43,8 @@
             list-style-type: none;
             padding-left: 0; /* Remove default padding */
             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 20px; /* Add space between navigation items */
         }
 
@@ -116,6 +119,36 @@
         /* Additional spacing for better layout */
         header nav {
             margin-top: 10px; /* Add space between header title and nav */
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 28px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .hero h2 {
+                font-size: 24px;
+            }
+
+            .hero p {
+                font-size: 14px;
+            }
+
+            .container {
+                padding: 0 10px;
+            }
         }
     </style>
 </head>
