@@ -63,6 +63,11 @@
             background-color: darkred;
         }
 
+        .message {
+            text-align: center;
+            margin-top: 20px;
+        }
+
         footer {
             background-color: #333;
             color: #fff;
@@ -92,7 +97,7 @@
 <body>
     <div class="container">
         <h1>Feedback</h1>
-        <form action="#" method="POST">
+        <form id="feedbackForm">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -103,6 +108,7 @@
             <textarea id="feedback" name="feedback" rows="5" required></textarea>
 
             <button type="submit">Submit</button>
+            <p class="message" id="message"></p>
         </form>
     </div>
     <footer>
@@ -115,5 +121,26 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var name = document.getElementById('name').value.trim();
+            var email = document.getElementById('email').value.trim();
+            var feedback = document.getElementById('feedback').value.trim();
+            var messageElement = document.getElementById('message');
+
+            if (name === '' || email === '' || feedback === '') {
+                messageElement.textContent = 'Please fill all boxes.';
+                messageElement.style.color = 'red';
+            } else {
+                messageElement.textContent = 'Your Feedback Has Been Received.';
+                messageElement.style.color = 'green';
+                // Optionally, clear the form fields
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('feedback').value = '';
+            }
+        });
+    </script>
 </body>
 </html>
