@@ -6,107 +6,97 @@
     <title>Movies & Television</title>
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /* Reset default browser styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            color: #fff; /* Set default text color to white */
         }
 
         body {
-            font-family: Arial, sans-serif; /* Use a standard web-safe font */
+            font-family: Arial, sans-serif;
             background-color: #000;
-            background-image: url('https://github.com/DensilK/cse23-104/raw/main/image/HD-wallpaper-batman-the-batman-dc-comics-the-batman-movie.jpg'); /* Add your background image here */
-            background-size: cover; /* Ensure the background covers the entire page */
-            background-position: cover; /* Center the background image */
-            background-attachment: fixed; /* Ensure the background image stays fixed on scroll */
-            line-height: 1.6; /* Improved readability */
-            overflow-x: hidden; /* Prevent horizontal scroll due to background image */
+            background-image: url('https://github.com/DensilK/cse23-104/raw/main/image/HD-wallpaper-batman-the-batman-dc-comics-the-batman-movie.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            line-height: 1.6;
+            overflow-x: hidden;
+            color: #fff;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 20px;
         }
 
         header {
             background-color: #333;
-            color: #fff; /* Set text color to white */
+            color: #fff;
             padding: 20px 0;
             text-align: center;
         }
 
         header h1 {
             font-size: 24px;
-            margin-bottom: 10px; /* Add space below the heading */
+            margin-bottom: 10px;
         }
 
         .section {
-            margin: 20px 0; /* Add space between sections */
+            margin: 20px 0;
         }
 
         .movies-row {
-            overflow-x: auto; /* Enable horizontal scrolling */
-            white-space: nowrap; /* Prevent items from wrapping to the next line */
-            padding: 10px 0; /* Add some padding for better spacing */
-            scrollbar-width: none; /* Hide scrollbar in Firefox */
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 10px 0;
+            scrollbar-width: none;
         }
 
         .movies-row::-webkit-scrollbar {
-            display: none; /* Hide scrollbar in WebKit-based browsers (Chrome, Safari) */
-        }
-
-        .movies-container {
-            display: inline-block; /* Display as inline-block for horizontal scroll */
+            display: none;
         }
 
         .movie {
-            display: inline-block; /* Display as inline-block for horizontal scroll */
-            margin-right: 10px; /* Add some spacing between movies */
+            display: inline-block;
+            margin-right: 10px;
         }
 
         .movie img {
-            width: 200px; /* Set reduced width for images */
-            outline: none; /* Remove any outline */
-            transition: transform 0.3s ease; /* Add a smooth transition for transform */
+            width: 100%;
+            max-width: 200px;
+            transition: transform 0.3s ease;
         }
 
         .movie img:hover {
-            transform: scale(1.05); /* Slightly enlarge the image on hover */
+            transform: scale(1.05);
         }
 
         @media (max-width: 768px) {
             header h1 {
-                font-size: 20px; /* Adjust header font size for smaller screens */
-            }
-
-            .section h2 {
-                font-size: 22px; /* Adjust section heading font size */
+                font-size: 20px;
             }
 
             .movie img {
-                width: 150px; /* Adjust movie image size for smaller screens */
+                max-width: 150px;
             }
         }
 
         @media (max-width: 576px) {
             header h1 {
-                font-size: 18px; /* Further adjust header font size for very small screens */
-            }
-
-            .section h2 {
-                font-size: 20px; /* Further adjust section heading font size */
+                font-size: 18px;
             }
 
             .movie img {
-                width: 120px; /* Further adjust movie image size for very small screens */
+                max-width: 120px;
             }
 
             .container {
-                padding: 0 10px; /* Reduce container padding for smaller screens */
+                padding: 10px;
             }
         }
     </style>
@@ -122,56 +112,55 @@
         <div class="section">
             <h2>Popular Movies</h2>
             <div class="movies-row">
-                <div class="movies-container">
-                    <div class="movie"><img src="image/space_jam_new_legacy_lebron_dunk_2000x3000.png" alt="Space Jam: A New Legacy"></div>
-                    <div class="movie"><img src="image/the_hobbit_an_expected_journey_2000x3000.jpg" alt="The Hobbit: An Unexpected Journey"></div>
-                    <div class="movie"><img src="image/harry_potter_8film_2000x3000.jpg" alt="Harry Potter"></div>
-                    <div class="movie"><img src="image/lego_movie_keyart.jpg" alt="The Lego Movie"></div>
-                    <div class="movie"><img src="image/the_dark_knight_rises_key_art.jpg" alt="The Dark Knight Rises"></div>
-                    <div class="movie"><img src="image/the_blind_side_key_art.jpg" alt="The Blind Side"></div>
-                    <div class="movie"><img src="image/AStarIsBorn_2018_2000x3000.jpg" alt="A Star Is Born"></div>
-                    <div class="movie"><img src="image/oceans_eleven_2000x3000.png" alt="eleven.html"></div>
-                    <div class="movie"><img src="image/inception_keyart.jpg" alt="inc.html"></div>
-                    <div class="movie"><img src="image/batman_v_superman_dd_keyart.jpg" alt="bvs.html"></div>
-                </div>
+                <div class="d-inline-block movie"><img src="image/space_jam_new_legacy_lebron_dunk_2000x3000.png" alt="Space Jam: A New Legacy"></div>
+                <div class="d-inline-block movie"><img src="image/the_hobbit_an_expected_journey_2000x3000.jpg" alt="The Hobbit: An Unexpected Journey"></div>
+                <div class="d-inline-block movie"><img src="image/harry_potter_8film_2000x3000.jpg" alt="Harry Potter"></div>
+                <div class="d-inline-block movie"><img src="image/lego_movie_keyart.jpg" alt="The Lego Movie"></div>
+                <div class="d-inline-block movie"><img src="image/the_dark_knight_rises_key_art.jpg" alt="The Dark Knight Rises"></div>
+                <div class="d-inline-block movie"><img src="image/the_blind_side_key_art.jpg" alt="The Blind Side"></div>
+                <div class="d-inline-block movie"><img src="image/AStarIsBorn_2018_2000x3000.jpg" alt="A Star Is Born"></div>
+                <div class="d-inline-block movie"><img src="image/oceans_eleven_2000x3000.png" alt="Ocean's Eleven"></div>
+                <div class="d-inline-block movie"><img src="image/inception_keyart.jpg" alt="Inception"></div>
+                <div class="d-inline-block movie"><img src="image/batman_v_superman_dd_keyart.jpg" alt="Batman v Superman"></div>
             </div>
         </div>
 
         <div class="section">
             <h2>New Releases</h2>
             <div class="movies-row">
-                <div class="movies-container">
-                    <div class="movie"><img src="image/shazam2_keyart.jpg" alt="Shazam! Fury of the Gods"></div>
-                    <div class="movie"><img src="image/wrath_of_man_2000x3000.jpg" alt="Wrath of Man"></div>
-                    <div class="movie"><img src="image/mortal_kombat_2021_2000x3000.jpg" alt="Mortal Kombat"></div>
-                    <div class="movie"><img src="image/godzilla_vs_kong_white_font_2000x3000.jpg" alt="Godzilla vs. Kong"></div>
-                    <div class="movie"><img src="image/judas_and_the_black_messiah_red_clean_2000x3000.png" alt="Judas and the Black Messiah"></div>
-                    <div class="movie"><img src="image/just_mercy_2000x3000.jpg" alt="Just Mercy"></div>
-                    <div class="movie"><img src="image/conjuring_keyart.jpg" alt="The Conjuring"></div>
-                    <div class="movie"><img src="image/wonder_woman_1984_rainbow_2000x3000.jpg" alt="ww.html"></div>
-                    <div class="movie"><img src="image/tom_jerry_hbo_max_theaters_2000x3000.png" alt="tj.html"></div>
-                    <div class="movie"><img src="image/dune_2000x3000.png" alt="dune.html"></div>
-                </div>
+                <div class="d-inline-block movie"><img src="image/shazam2_keyart.jpg" alt="Shazam! Fury of the Gods"></div>
+                <div class="d-inline-block movie"><img src="image/wrath_of_man_2000x3000.jpg" alt="Wrath of Man"></div>
+                <div class="d-inline-block movie"><img src="image/mortal_kombat_2021_2000x3000.jpg" alt="Mortal Kombat"></div>
+                <div class="d-inline-block movie"><img src="image/godzilla_vs_kong_white_font_2000x3000.jpg" alt="Godzilla vs. Kong"></div>
+                <div class="d-inline-block movie"><img src="image/judas_and_the_black_messiah_red_clean_2000x3000.png" alt="Judas and the Black Messiah"></div>
+                <div class="d-inline-block movie"><img src="image/just_mercy_2000x3000.jpg" alt="Just Mercy"></div>
+                <div class="d-inline-block movie"><img src="image/conjuring_keyart.jpg" alt="The Conjuring"></div>
+                <div class="d-inline-block movie"><img src="image/wonder_woman_1984_rainbow_2000x3000.jpg" alt="Wonder Woman 1984"></div>
+                <div class="d-inline-block movie"><img src="image/tom_jerry_hbo_max_theaters_2000x3000.png" alt="Tom & Jerry"></div>
+                <div class="d-inline-block movie"><img src="image/dune_2000x3000.png" alt="Dune"></div>
             </div>
         </div>
 
         <div class="section">
             <h2>Television</h2>
             <div class="movies-row">
-                <div class="movies-container">
-                    <div class="movie"><img src="image/tedlasso_1400x2100_v1.jpg" alt="Ted Lasso"></div>
-                    <div class="movie"><img src="image/abbott-elementary_s3_1400x2100_v1.jpg" alt="Abbott Elementary"></div>
-                    <div class="movie"><img src="image/deadboydectives-s1_1400x2100_v1.jpg" alt="Dead Boy Detectives"></div>
-                    <div class="movie"><img src="image/thebigcigar-s1_1400x2100_v1.jpg" alt="The Big Cigar"></div>
-                    <div class="movie"><img src="image/thegirlsonthebus-s1_1400x2100_v1.jpg" alt="The Girls on the Bus"></div>
-                    <div class="movie"><img src="image/bip-s9_1400x2100_v1.jpg" alt="Bachelor in Paradise"></div>
-                    <div class="movie"><img src="image/the_bachelorette_s20_keyart.jpg" alt="The Bachelorette"></div>
-                    <div class="movie"><img src="image/rhony_1400x2100_v1_0.jpg" alt="rhony.html"></div>
-                    <div class="movie"><img src="image/extra_s26_2000x3000_key_art.jpg" alt="extra.html"></div>
-                    <div class="movie"><img src="image/allamerican_s4_1400x2100_v1_0.jpg" alt="young.html"></div>
-                </div>
+                <div class="d-inline-block movie"><img src="image/tedlasso_1400x2100_v1.jpg" alt="Ted Lasso"></div>
+                <div class="d-inline-block movie"><img src="image/abbott-elementary_s3_1400x2100_v1.jpg" alt="Abbott Elementary"></div>
+                <div class="d-inline-block movie"><img src="image/deadboydectives-s1_1400x2100_v1.jpg" alt="Dead Boy Detectives"></div>
+                <div class="d-inline-block movie"><img src="image/thebigcigar-s1_1400x2100_v1.jpg" alt="The Big Cigar"></div>
+                <div class="d-inline-block movie"><img src="image/thegirlsonthebus-s1_1400x2100_v1.jpg" alt="The Girls on the Bus"></div>
+                <div class="d-inline-block movie"><img src="image/bip-s9_1400x2100_v1.jpg" alt="Bachelor in Paradise"></div>
+                <div class="d-inline-block movie"><img src="image/the_bachelorette_s20_keyart.jpg" alt="The Bachelorette"></div>
+                <div class="d-inline-block movie"><img src="image/rhony_1400x2100_v1_0.jpg" alt="The Real Housewives of New York City"></div>
+                <div class="d-inline-block movie"><img src="image/extra_s26_2000x3000_key_art.jpg" alt="Extra"></div>
+                <div class="d-inline-block movie"><img src="image/allamerican_s4_1400x2100_v1_0.jpg" alt="All American"></div>
             </div>
         </div>
     </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
